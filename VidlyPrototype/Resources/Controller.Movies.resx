@@ -180,4 +180,10 @@
   <data name="view_movie" xml:space="preserve">
     <value>View Movie Data</value>
   </data>
+  <data name="already_in_rentals" xml:space="preserve">
+    <value>You already have this movie in your rentals list</value>
+  </data>
+  <data name="movie_not_available" xml:space="preserve">
+    <value>This movie is not available at the moment</value>
+  </data>
 </root>

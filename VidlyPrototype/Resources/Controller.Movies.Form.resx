@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="access_denied" xml:space="preserve">
+    <value>Access Denied! Please Log In To Perform This Action</value>
+  </data>
+  <data name="already_in_rentals" xml:space="preserve">
+    <value>You already have this movie in your rentals list</value>
+  </data>
   <data name="movie_genre_required" xml:space="preserve">
     <value>The Movie Genres field is required</value>
+  </data>
+  <data name="movie_not_available" xml:space="preserve">
+    <value>This movie is not available at the moment</value>
   </data>
   <data name="name_required" xml:space="preserve">
     <value>The Name field is required</value>

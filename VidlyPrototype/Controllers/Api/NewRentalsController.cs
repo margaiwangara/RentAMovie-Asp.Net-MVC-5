@@ -29,7 +29,7 @@ namespace VidlyPrototype.Controllers.Api
             foreach(var movie in movies)
             {
                 if (movie.NumberAvailable == 0)
-                    return BadRequest("This movie is not available at the moment");
+                    return BadRequest(Resources.Controller_Movies_Form.movie_not_available);
 
                 movie.NumberAvailable--;
 

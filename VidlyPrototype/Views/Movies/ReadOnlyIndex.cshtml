@@ -89,7 +89,7 @@
                             method: "POST",
                             data: { "movieId": button.attr("data-movie-id") },
                             success: function () {
-                                table.row(button.addClass('disabled').html("<i class='fa fa-check'></i> Rented"));
+                                table.row(button.addClass('disabled').html("<i class='fa fa-check'></i> @Resources.Controller_Movies.rented"));
                                 toastr.success("@Resources.Controller_Movies.added_to_rentals");
                             },
                             error: function (x, y, j) {

@@ -27,7 +27,7 @@ namespace VidlyPrototype.Controllers.Api
             var user = _context.Users.SingleOrDefault(u => u.UserName == User.Identity.Name);
 
             if (user == null)
-                return Content(HttpStatusCode.BadRequest, "Access Denied! Please Log In To Perform This Action");
+                return Content(HttpStatusCode.BadRequest, Resources.Controller_Movies_Form.access_denied);
 
             var movie = _context.Movies.SingleOrDefault(m => userRentalsDto.MovieId == m.Id);
 
@@ -41,7 +41,7 @@ namespace VidlyPrototype.Controllers.Api
 
             //if rentals exists is not  equal to null
             if (rentalExists != null)
-                return Content(HttpStatusCode.BadRequest, "You already have this movie in your rentals list");
+                return Content(HttpStatusCode.BadRequest, Resources.Controller_Movies_Form.already_in_rentals);
 
             var rental = new UserRentals
             {

@@ -79,6 +79,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You already have this movie in your rentals list.
+        /// </summary>
+        public static string already_in_rentals {
+            get {
+                return ResourceManager.GetString("already_in_rentals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Available.
         /// </summary>
         public static string available {
@@ -147,6 +156,15 @@ namespace Resources {
         public static string movie_genres_sl {
             get {
                 return ResourceManager.GetString("movie_genres_sl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This movie is not available at the moment.
+        /// </summary>
+        public static string movie_not_available {
+            get {
+                return ResourceManager.GetString("movie_not_available", resourceCulture);
             }
         }
         

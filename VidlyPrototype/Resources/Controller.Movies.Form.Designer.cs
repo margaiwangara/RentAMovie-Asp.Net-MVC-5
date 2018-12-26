@@ -61,11 +61,38 @@ namespace VidlyPrototype.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Access Denied! Please Log In To Perform This Action.
+        /// </summary>
+        internal static string access_denied {
+            get {
+                return ResourceManager.GetString("access_denied", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You already have this movie in your rentals list.
+        /// </summary>
+        internal static string already_in_rentals {
+            get {
+                return ResourceManager.GetString("already_in_rentals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The Movie Genres field is required.
         /// </summary>
         internal static string movie_genre_required {
             get {
                 return ResourceManager.GetString("movie_genre_required", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This movie is not available at the moment.
+        /// </summary>
+        internal static string movie_not_available {
+            get {
+                return ResourceManager.GetString("movie_not_available", resourceCulture);
             }
         }
         

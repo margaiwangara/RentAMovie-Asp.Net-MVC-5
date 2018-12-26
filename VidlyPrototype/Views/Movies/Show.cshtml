@@ -4,16 +4,9 @@
     ViewBag.Title = Model.Movies.Name == null?Resources.Controller_Movies.show:Model.Movies.Name.ToUpper();
     Layout = "~/Views/Shared/_Layout.cshtml";
     var imageBase = "https://image.tmdb.org/t/p/original";
-    string fullImage = null;
 
-    if (Model.Movies.PosterImage.IsEmpty())
-    {
-        fullImage = "Content/Images/no_image.jpg";
-    }
-    else
-    {
-        fullImage = imageBase + Model.Movies.PosterImage;
-    }
+    string fullImage = imageBase + Model.Movies.PosterImage;
+    
 }
 <section id="show-movie-section">
     <div class="show-movie-inner container mb-4">
@@ -27,7 +20,15 @@
                                 <div class="movie-details border-right border-2 p-2 pt-3 text-center">
                                     <div class="d-flex flex-column">
                                         <div class="align-content-center border-bottom p-3 mb-3">
-                                            <img src="@fullImage" alt="@Model.Movies.Name-poster" class="img-fluid rounded" height="150" width="150">
+                                            @if (Model.Movies.PosterImage.IsEmpty())
+                                            {
+                                                <img src="~/Content/Images/no_image.jpg" alt="@Model.Movies.Name-poster" class="img-fluid rounded" height="150" width="150">
+                                            }
+                                            else
+                                            {
+                                                <img src="@fullImage" alt="@Model.Movies.Name-poster" class="img-fluid rounded" height="150" width="150">
+                                            }
+
                                         </div>
 
                                         <h4 class="display-5 text-capitalize">@Model.Movies.Name</h4>

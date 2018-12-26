@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="access_denied" xml:space="preserve">
+    <value>Bu İşlemi Gerçekleştirmek İçin Lütfen Giriş Yapın</value>
+  </data>
+  <data name="already_in_rentals" xml:space="preserve">
+    <value>Bu filmi kiralama listenizde zaten var</value>
+  </data>
   <data name="movie_genre_required" xml:space="preserve">
     <value>Film Türleri alanı zorunludur</value>
+  </data>
+  <data name="movie_not_available" xml:space="preserve">
+    <value>Bu film şu anda yok</value>
   </data>
   <data name="name_required" xml:space="preserve">
     <value>Film İsmi alanı zorunludur</value>

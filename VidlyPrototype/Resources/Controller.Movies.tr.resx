@@ -180,4 +180,10 @@
   <data name="view_movie" xml:space="preserve">
     <value>Film Verilerini Görüntüle</value>
   </data>
+  <data name="already_in_rentals" xml:space="preserve">
+    <value>Bu filmi kiralama listenizde zaten var</value>
+  </data>
+  <data name="movie_not_available" xml:space="preserve">
+    <value>Bu film şu anda yok</value>
+  </data>
 </root>
