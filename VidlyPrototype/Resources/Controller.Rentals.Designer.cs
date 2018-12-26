@@ -61,6 +61,33 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Rental.
+        /// </summary>
+        public static string add_rentals {
+            get {
+                return ResourceManager.GetString("add_rentals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Rental.
+        /// </summary>
+        public static string create_rental {
+            get {
+                return ResourceManager.GetString("create_rental", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Customer Name.
+        /// </summary>
+        public static string customer_name {
+            get {
+                return ResourceManager.GetString("customer_name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Customers.
         /// </summary>
         public static string customers {
@@ -124,6 +151,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please select at least one movie.
+        /// </summary>
+        public static string movie_count {
+            get {
+                return ResourceManager.GetString("movie_count", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Movie Name.
         /// </summary>
         public static string movie_name {
@@ -133,11 +169,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The movie is not available at the moment.
+        /// </summary>
+        public static string movie_unavailable {
+            get {
+                return ResourceManager.GetString("movie_unavailable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rentals.
         /// </summary>
         public static string rentals {
             get {
                 return ResourceManager.GetString("rentals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rentals added successfully.
+        /// </summary>
+        public static string rentals_added_success {
+            get {
+                return ResourceManager.GetString("rentals_added_success", resourceCulture);
             }
         }
         
@@ -165,6 +219,15 @@ namespace Resources {
         public static string users {
             get {
                 return ResourceManager.GetString("users", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select a valid customer.
+        /// </summary>
+        public static string valid_customer {
+            get {
+                return ResourceManager.GetString("valid_customer", resourceCulture);
             }
         }
     }

@@ -13,7 +13,7 @@ namespace VidlyPrototype.Models
         [Required]
         public Movie Movie { get; set; }
 
-        [Required]
+        [Required(ErrorMessageResourceName = "customer_required", ErrorMessageResourceType = typeof(Resources.Controller_Rentals_Form))]
         public Customer Customer { get; set; }
 
         public DateTime DateRented { get; set; }

@@ -117,61 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="customers" xml:space="preserve">
-    <value>Müşteriler</value>
+  <data name="confirm_new_match" xml:space="preserve">
+    <value>The New Password and Confirmation Password do not match.</value>
   </data>
-  <data name="date_rented" xml:space="preserve">
-    <value>Kıralama Tarihi</value>
+  <data name="current_pass_required" xml:space="preserve">
+    <value>The Current password field is required.</value>
   </data>
-  <data name="inform" xml:space="preserve">
-    <value>Bildir</value>
+  <data name="new_password_length" xml:space="preserve">
+    <value>The New Password must be at least 6 characters long.</value>
   </data>
-  <data name="informed" xml:space="preserve">
-    <value>Bildirildi</value>
-  </data>
-  <data name="inform_button_title" xml:space="preserve">
-    <value>Kiralama Tarihinin Neredeyse Bitmiş Olduğunu Kullanıcıya Bildirim Gönder</value>
-  </data>
-  <data name="inform_of_expiry" xml:space="preserve">
-    <value>Sona Erme Bildirme</value>
-  </data>
-  <data name="inform_title" xml:space="preserve">
-    <value>Film Aboneliği Kullanım Süresi'nin İade Tarihine ve Bugünün Tarihine Göre Bilgilendirilmesi.</value>
-  </data>
-  <data name="movie_name" xml:space="preserve">
-    <value>Film İsmi</value>
-  </data>
-  <data name="rentals" xml:space="preserve">
-    <value>Kıralananlar</value>
-  </data>
-  <data name="return_date" xml:space="preserve">
-    <value>İade Tarihi[TİT]</value>
-  </data>
-  <data name="username" xml:space="preserve">
-    <value>Kullanıcı Adı</value>
-  </data>
-  <data name="users" xml:space="preserve">
-    <value>Kullanıcılar</value>
-  </data>
-  <data name="add_rentals" xml:space="preserve">
-    <value>Kiralama Ekle</value>
-  </data>
-  <data name="create_rental" xml:space="preserve">
-    <value>Kira Oluştur</value>
-  </data>
-  <data name="customer_name" xml:space="preserve">
-    <value>Müşteri Adı</value>
-  </data>
-  <data name="movie_count" xml:space="preserve">
-    <value>Lütfen en az bir film seçin</value>
-  </data>
-  <data name="movie_unavailable" xml:space="preserve">
-    <value>Seçtiğiniz film şu anda yok</value>
-  </data>
-  <data name="rentals_added_success" xml:space="preserve">
-    <value>Kiralama başarıyla eklendi</value>
-  </data>
-  <data name="valid_customer" xml:space="preserve">
-    <value>Lütfen geçerli bir müşteri seçin</value>
+  <data name="new_password_required" xml:space="preserve">
+    <value>The New password field is required.</value>
   </data>
 </root>

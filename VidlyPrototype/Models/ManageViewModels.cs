@@ -45,20 +45,20 @@ namespace VidlyPrototype.Models
 
     public class ChangePasswordViewModel
     {
-        [Required]
+        [Required(ErrorMessageResourceName = "current_pass_required", ErrorMessageResourceType = typeof(Resources.Controller_Users_Form))]
         [DataType(DataType.Password)]
         [Display(Name = "Current password")]
         public string OldPassword { get; set; }
 
-        [Required]
-        [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
+        [Required(ErrorMessageResourceName = "new_password_required", ErrorMessageResourceType = typeof(Resources.Controller_Users_Form))]
+        [StringLength(100, ErrorMessageResourceType = typeof(Resources.Controller_Users_Form), ErrorMessageResourceName = "new_password_length", MinimumLength = 6)]
         [DataType(DataType.Password)]
         [Display(Name = "New password")]
         public string NewPassword { get; set; }
 
         [DataType(DataType.Password)]
         [Display(Name = "Confirm new password")]
-        [Compare("NewPassword", ErrorMessage = "The new password and confirmation password do not match.")]
+        [Compare("NewPassword", ErrorMessageResourceType = typeof(Resources.Controller_Users_Form), ErrorMessageResourceName = "confirm_new_match")]
         public string ConfirmPassword { get; set; }
     }
 

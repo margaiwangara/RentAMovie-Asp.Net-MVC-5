@@ -397,6 +397,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Controller.Accout.Validation.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\Controller.Admin.Dashboard.tr.Designer.cs">
+      <DependentUpon>Controller.Admin.Dashboard.tr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Controller.Admin.Dashboard.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Controller.Admin.Dashboard.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Controller.Customers.tr.Designer.cs">
       <DependentUpon>Controller.Customers.tr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -437,6 +447,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Controller.Movies.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\Controller.Notifications.tr.Designer.cs">
+      <DependentUpon>Controller.Notifications.tr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Controller.Notifications.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Controller.Notifications.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controller.Rentals.Form.tr.Designer.cs">
+      <DependentUpon>Controller.Rentals.Form.tr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Controller.Rentals.Form.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Controller.Rentals.Form.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\Controller.Rentals.tr.Designer.cs">
       <DependentUpon>Controller.Rentals.tr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -446,6 +476,26 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Controller.Rentals.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controller.Users.Form.tr.Designer.cs">
+      <DependentUpon>Controller.Users.Form.tr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Controller.Users.Form.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Controller.Users.Form.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Controller.Users.tr.Designer.cs">
+      <DependentUpon>Controller.Users.tr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\Controller.Users.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Controller.Users.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\Controllers.Customers.Form.tr.Designer.cs">
       <DependentUpon>Controllers.Customers.Form.tr.resx</DependentUpon>
@@ -1331,6 +1381,16 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Controller.Accout.Validation.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controller.Admin.Dashboard.tr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Controller.Admin.Dashboard.tr.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controller.Admin.Dashboard.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Controller.Admin.Dashboard.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Controller.Customers.tr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Controller.Customers.tr.Designer.cs</LastGenOutput>
@@ -1371,6 +1431,24 @@
       <LastGenOutput>Controller.Movies.Designer.cs</LastGenOutput>
       <CustomToolNamespace>Resources</CustomToolNamespace>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controller.Notifications.tr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Controller.Notifications.tr.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controller.Notifications.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Controller.Notifications.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controller.Rentals.Form.tr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Controller.Rentals.Form.tr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controller.Rentals.Form.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Controller.Rentals.Form.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Controller.Rentals.tr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Controller.Rentals.tr.Designer.cs</LastGenOutput>
@@ -1379,6 +1457,24 @@
     <EmbeddedResource Include="Resources\Controller.Rentals.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Controller.Rentals.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controller.Users.Form.tr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Controller.Users.Form.tr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controller.Users.Form.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Controller.Users.Form.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controller.Users.tr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Controller.Users.tr.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Controller.Users.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Controller.Users.Designer.cs</LastGenOutput>
       <CustomToolNamespace>Resources</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Controllers.Customers.Form.tr.resx">

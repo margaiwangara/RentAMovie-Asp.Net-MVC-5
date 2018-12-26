@@ -7,7 +7,7 @@
             console.log("Success");
         },
         error: function (x) {
-            console.log(x.status);
+            console.log(x.responseText);
         }
     });
 });

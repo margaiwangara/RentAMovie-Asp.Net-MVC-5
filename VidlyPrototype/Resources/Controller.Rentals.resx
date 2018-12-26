@@ -153,4 +153,25 @@
   <data name="users" xml:space="preserve">
     <value>Users</value>
   </data>
+  <data name="add_rentals" xml:space="preserve">
+    <value>Add Rental</value>
+  </data>
+  <data name="create_rental" xml:space="preserve">
+    <value>Create Rental</value>
+  </data>
+  <data name="customer_name" xml:space="preserve">
+    <value>Customer Name</value>
+  </data>
+  <data name="movie_count" xml:space="preserve">
+    <value>Please select at least one movie</value>
+  </data>
+  <data name="movie_unavailable" xml:space="preserve">
+    <value>The movie is not available at the moment</value>
+  </data>
+  <data name="rentals_added_success" xml:space="preserve">
+    <value>Rentals added successfully</value>
+  </data>
+  <data name="valid_customer" xml:space="preserve">
+    <value>Please select a valid customer</value>
+  </data>
 </root>

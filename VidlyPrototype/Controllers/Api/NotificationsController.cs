@@ -60,7 +60,29 @@ namespace VidlyPrototype.Controllers.Api
             return Ok();
         }
 
+        //what will we pass in
+        //user id only which will in turn check for all notifications belonging to that user id and mark them as read and then add date
+        [HttpPut]
+        public IHttpActionResult UpdateSetAllToRead(string UserId)
+        {
+            var setToRead = _context.Notifications.Where(n => n.User.UserName == UserId && n.HasBeenRead == false);
+
+            if (setToRead == null)
+                return NotFound();
+
+            foreach(var data in setToRead)
+            {
+                data.HasBeenRead = true;
+                data.DateRead = DateTime.Now;
+            }
+            
+            _context.SaveChanges();
+
+            return Ok();
+        }
+
         //GET api/notifications/x/1
+        [HttpGet]
         public IHttpActionResult GetNotifications(string userId, int movieId)
         {
             var notifiedData = _context.Notifications.SingleOrDefault(n => n.MovieId == movieId && n.UserId == userId);
@@ -82,22 +104,5 @@ namespace VidlyPrototype.Controllers.Api
             return notifications;
         }
 
-        //what will we pass in
-        //user id only which will in turn check for all notifications belonging to that user id and mark them as read and then add date
-        [HttpPut]
-        public IHttpActionResult SetAllToRead()
-        {
-            var setToRead = _context.Notifications.SingleOrDefault(n => n.User.UserName == User.Identity.Name);
-
-            if (setToRead == null)
-                return NotFound();
-
-            setToRead.HasBeenRead = true;
-            setToRead.DateRead = DateTime.Now;
-
-            _context.SaveChanges();
-
-            return Ok();
-        }
     }
 }

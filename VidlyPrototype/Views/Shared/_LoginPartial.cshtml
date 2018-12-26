@@ -28,7 +28,7 @@
                                         <h6 class="small">@username</h6>
                                         <div>
                                             <a href="@Url.Action("Index", "Manage")" class="btn btn-outline-success btn-block">
-                                                <i class="fas fa-user-alt"></i> View Profile
+                                                <i class="fas fa-user-alt"></i> @Resources.Controller_Users.view_profile
                                             </a>
                                         </div>
                                         @if (User.Identity.IsAuthenticated && User.IsInRole(RoleName.IsAdministrator))
@@ -36,7 +36,7 @@
                                             <div class="dropdown-divider"></div>
                                             <div class="mb-2">
                                                 <a href="@Url.Action("Index", "Administrator")" class="btn btn-outline-primary btn-block">
-                                                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                                                    <i class="fas fa-tachometer-alt"></i> @Resources.Controller_Admin_Dashboard.dashboard
                                                 </a>
                                             </div>
                                         }
@@ -63,16 +63,14 @@
                         <div class="notification-display" id="user-informer">
                             <div class="row">
                                 <div class="col">
-                                    <div class="dropdown-header"><span class="badge badge-success badge-the-notifier"></span> unread notifications</div>
+                                    <div class="dropdown-header"><span class="badge badge-success badge-the-notifier"></span> @Resources.Controller_Notifications.unread</div>
+                                    <div class="row mb-2 border-bottom">
+                                        <div class="col-md-12 text-right">
+                                            <a href="@Url.Action("Index", "Notifications")" class="btn btn-link">@Resources.Controller_Notifications.view_all</a>
+                                        </div>                                     
+                                    </div>
                                     <div class="d-flex flex-column">
-                                        <div class="d-flex border-bottom mb-2">
-                                            <div class="align-content-start">
-                                                <a href="@Url.Action("Index", "Notifications")">View All</a>
-                                            </div>
-                                            <div class="align-content-end ml-auto">
-                                                <a href="#" class="mark-as-read">Mark All As Read</a>
-                                            </div>
-                                        </div>
+                                        
                                         <style>
                                             .user-informer-card a { text-decoration: none;}
                                         </style>

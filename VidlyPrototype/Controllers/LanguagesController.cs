@@ -29,7 +29,10 @@ namespace VidlyPrototype.Controllers
             cookie.Value = LanguageAbbreviation;
             Response.Cookies.Add(cookie);
 
-            return RedirectToAction("Index", "Home");
+            if (Request.QueryString["ReturnURL"] != null)
+                return Redirect(Request.QueryString["ReturnURL"]);
+            else
+                return RedirectToAction("Index", "Home");
         }
     }
 }

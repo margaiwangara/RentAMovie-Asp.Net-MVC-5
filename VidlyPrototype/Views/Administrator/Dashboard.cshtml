@@ -1,6 +1,6 @@
 ﻿@model VidlyPrototype.ViewModels.DashboardDataViewModel
 @{
-    ViewBag.Title = "Dashboard";
+    ViewBag.Title = Resources.Controller_Admin_Dashboard.dashboard;
     Layout = "~/Views/Shared/_Layout.cshtml";
 
     int custCount, movCount, userCount, x = 0;
@@ -18,7 +18,7 @@
         <div class="row">
             <div class="col">
                 <h4 class="display-4 p-2">
-                    <i class="fas fa-tachometer-alt"></i> Dashboard
+                    <i class="fas fa-tachometer-alt"></i> @Resources.Controller_Admin_Dashboard.dashboard
                 </h4>
             </div>
         </div>
@@ -31,7 +31,7 @@
             <div class="col-md-3">
                 <div class="card bg-info">
                     <div class="card-body">
-                        <h3>Customers</h3>
+                        <h3>@Resources.Controller_Admin_Dashboard.customers</h3>
                         <h4 class="display-4">
                             <i class="far fa-folder"></i> @custCount
                         </h4>
@@ -41,7 +41,7 @@
             <div class="col-md-3">
                 <div class="card bg-success">
                     <div class="card-body">
-                        <h3>Users</h3>
+                        <h3>@Resources.Controller_Admin_Dashboard.users</h3>
                         <h4 class="display-4">
                             <i class="fas fa-users"></i> @userCount
                         </h4>
@@ -51,7 +51,7 @@
             <div class="col-md-3">
                 <div class="card bg-primary">
                     <div class="card-body">
-                        <h3>Movies</h3>
+                        <h3>@Resources.Controller_Admin_Dashboard.movies</h3>
                         <h4 class="display-4">
                             <i class="fas fa-film"></i> @movCount
                         </h4>
@@ -61,7 +61,7 @@
             <div class="col-md-3">
                 <div class="card bg-danger">
                     <div class="card-body">
-                        <h3>Movies Rented</h3>
+                        <h3>@Resources.Controller_Admin_Dashboard.movies_rented</h3>
                         <h4 class="display-4">
                             @{ 
                                 var rentedTotals = 0;
@@ -102,16 +102,16 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h3 class="display-5 border-bottom py-2 mb-3">Most Recent Customers</h3>
+                        <h3 class="display-5 border-bottom py-2 mb-3">@Resources.Controller_Admin_Dashboard.recent_customers</h3>
                         @if (custCount > 0)
                         {
                             <div class="table-responsive-md">
                                 <table class="table table-hover table-bordered table-striped">
                                     <thead class="bg-info">
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Membership Type</th>
-                                            <th>Date of Birth</th>
+                                            <th>@Resources.Controller_Admin_Dashboard.name</th>
+                                            <th>@Resources.Controller_Admin_Dashboard.membership_type</th>
+                                            <th>@Resources.Controller_Admin_Dashboard.date_of_birth</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -143,7 +143,7 @@
                             else
                             {
                                 <p class="text-center h5 text-info">
-                                    <i class="fas fa-info"></i> No Customer Data Available
+                                    <i class="fas fa-info"></i> @Resources.Controller_Admin_Dashboard.no_customers
                                 </p>
                             }
 
@@ -153,18 +153,18 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-body">
-                        <h3 class="display-5 border-bottom py-2 mb-3">Recently Added Movies</h3>
+                        <h3 class="display-5 border-bottom py-2 mb-3">@Resources.Controller_Admin_Dashboard.recent_movies</h3>
                         @if (movCount > 0)
                         {
                             <div class="table-responsive-sm">
                                 <table class="table table-hover table-bordered table-striped">
                                     <thead class="bg-primary">
                                         <tr>
-                                            <th>Name</th>
-                                            <th>Genre</th>
+                                            <th>@Resources.Controller_Admin_Dashboard.name</th>
+                                            <th>@Resources.Controller_Admin_Dashboard.genre</th>
                                             @*<th>Release Date</th>*@
                                             @*<th>Date Added</th>*@
-                                            <th>InStock</th>
+                                            <th>@Resources.Controller_Admin_Dashboard.no_in_stock</th>
                                         </tr>
                                     </thead>
                                     <tbody class="text-center">
@@ -197,7 +197,7 @@
                         else
                         {
                             <p class="text-center h5 text-info">
-                                <i class="fas fa-info"></i> No Movie Data Available
+                                <i class="fas fa-info"></i> @Resources.Controller_Admin_Dashboard.no_movies
                             </p>
                         }
                     </div>

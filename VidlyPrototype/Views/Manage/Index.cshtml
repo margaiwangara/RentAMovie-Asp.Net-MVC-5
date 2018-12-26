@@ -1,7 +1,7 @@
 ﻿@model VidlyPrototype.Models.IndexViewModel
 @using Microsoft.AspNet.Identity
 @{
-    ViewBag.Title = "User Profile";
+    ViewBag.Title = Resources.Controller_Users.user_profile;
     var name = User.Identity.GetUserName() != null ? User.Identity.GetUserName() : null;
 }
 
@@ -25,11 +25,11 @@
                                             @if (Model.HasPassword)
                                             {
                                                 
-                                                @Html.ActionLink(" Change Password", "ChangePassword", null, new { @class="btn btn-outline-success btn-block"})
+                                                @Html.ActionLink(Resources.Controller_Users.change_password, "ChangePassword", null, new { @class="btn btn-outline-success btn-block"})
                                             }
                                             else
                                             {
-                                                @Html.ActionLink("Create Password", "SetPassword", null, new { @class = "btn btn-outline-danger btn-block" })
+                                                @Html.ActionLink(Resources.Controller_Users.create_password, "SetPassword", null, new { @class = "btn btn-outline-danger btn-block" })
                                             }
 
 
@@ -41,7 +41,7 @@
                             </div>
                             <div class="col-lg-8">
                                 <div class="movie-relations border-right border-2 p-2 pt-3 text-center">
-                                    <h4 class="display-4 border-bottom my-3">Movies Rented...</h4>
+                                    <h4 class="display-4 border-bottom my-3">@Resources.Controllers_Customers_Form.movies_rented...</h4>
                                     @if (User.Identity.IsAuthenticated)
                                     {
                                         if (Model.UserRentals.Count() > 0)
@@ -50,9 +50,9 @@
                                                 <table class="table table-bordered table-hover">
                                                     <thead class="thead-light">
                                                         <tr>
-                                                            <th>Name</th>
-                                                            <th>Date Rented</th>
-                                                            <th>Return Date (ERD)</th>
+                                                            <th>@Resources.Controller_Admin_Dashboard.name</th>
+                                                            <th>@Resources.Controller_Rentals.date_rented</th>
+                                                            <th>@Resources.Controller_Rentals.return_date</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody class="text-capitalize">
@@ -77,14 +77,14 @@
                                         else
                                         {
                                             <p class="h3 text-warning">
-                                                <i class="fas fa-exclamation-circle"></i> No Rentals Data Available
+                                                <i class="fas fa-exclamation-circle"></i> @Resources.Controllers_Customers_Form.no_rentals
                                             </p>
                                         }
                                     }
                                     else
                                     {
                                         <p class="text-danger h3">
-                                            <i class="fas fa-user-lock"></i> Please Access You Account To View This Page
+                                            <i class="fas fa-user-lock"></i> @Resources.Controller_Users.access_account
                                         </p>
                                     }
                                 </div>
