@@ -9,6 +9,7 @@ using VidlyPrototype.ViewModels;
 
 namespace VidlyPrototype.Controllers
 {
+    [Authorize(Roles = RoleName.IsAdministrator)]
     public class AdministratorController : Controller
     {
         ApplicationDbContext _context;
@@ -26,6 +27,7 @@ namespace VidlyPrototype.Controllers
         }
 
         // GET: Administrator
+
         public ActionResult Index()
         {
             //customers

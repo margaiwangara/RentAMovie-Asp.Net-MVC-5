@@ -61,6 +61,7 @@ namespace VidlyPrototype.Controllers
         }
 
         //GET: Create Form
+        [Authorize(Roles = RoleName.IsAdministrator)]
         public ActionResult Create()
         {
             var membershipTypes = _context.MembershipTypes.ToList();
@@ -77,6 +78,7 @@ namespace VidlyPrototype.Controllers
         //POST: Submit New Customer Creation Form
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = RoleName.IsAdministrator)]
         public ActionResult Save(CustomerViewModel customer)
         {
             if (!ModelState.IsValid)
@@ -107,6 +109,7 @@ namespace VidlyPrototype.Controllers
         }
 
         //GET: Edit Form
+        [Authorize(Roles = RoleName.IsAdministrator)]
         public ActionResult Edit(int id)
         {
             var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
@@ -125,6 +128,7 @@ namespace VidlyPrototype.Controllers
         }
 
         //GET: Display customer details
+        [Authorize(Roles = RoleName.IsAdministrator)]
         public ActionResult Details(int id)
         {
             var customer = _context.Customers.Include(c => c.MembershipTypes).SingleOrDefault(c => c.Id == id);
