@@ -103,12 +103,16 @@
 
             });
 
+            table.rows().every(function (rowIdx, tableLoop, rowLoop) {
+                console.log("this is a row loop");
+            });
+
             $("#movies .js-movie-rent").each(function (x, y) {
                 var informer = $(this);
 
+
                 var movieId = informer.attr('data-movie-id');
 
-                console.log(informer);
 
                 $.ajax({
                     url: "/api/userRentals/".concat(movieId),
