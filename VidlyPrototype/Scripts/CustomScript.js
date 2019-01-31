@@ -99,43 +99,6 @@
         });
     });
 
-    $.ajax({
-        url: "https://newsapi.org/v2/top-headlines?category=technology&country=us&apiKey=e773f762c809423eae750354d71aaeb7",
-        method: "GET",
-        dataType: "json",
-        success: function (data) {
-            //console.log(data.articles);
-            var articles = {
-                'title': [],
-                'urls': []
-
-            };
-
-            if (data.status == "ok") {
-
-                data.articles.forEach(function (value, key) {
-                    articles.title.push(value['title']);
-                    articles.urls.push(value['url']);
-                });
-
-                var i = 0;
-                setInterval(function () {
-                    if (i < articles.title.length) {
-                        $(".movie-rss").html("<a href='" + articles.urls[i] + "' target='_blank'>" + articles.title[i] + "</a>");
-                        i++;
-                    } else {
-                        i = 0;
-                    }
-
-                }, 5000);
-
-
-            }
-        },
-        error: function (x) {
-            console.log(x.status);
-        }
-    });
     var movies = {
         'id': [],
         'originalLanguage': [],

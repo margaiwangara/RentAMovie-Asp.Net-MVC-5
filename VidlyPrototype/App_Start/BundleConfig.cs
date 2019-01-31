@@ -15,7 +15,8 @@ namespace VidlyPrototype
                         "~/Scripts/DataTables/jquery.datatables.js",
                         "~/Scripts/DataTables/datatables.bootstrap4.js",
                         "~/Scripts/typeahead.bundle.js",
-                        "~/Scripts/toastr.js"));
+                        "~/Scripts/toastr.js",
+                        "~/Scripts/axios.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));

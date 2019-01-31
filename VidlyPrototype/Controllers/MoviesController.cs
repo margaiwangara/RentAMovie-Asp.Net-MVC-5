@@ -11,17 +11,21 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Script.Serialization;
 using Newtonsoft.Json;
+using VidlyPrototype.DatabaseFirst;
 
 namespace VidlyPrototype.Controllers
 {
     public class MoviesController : Controller
     {
+
         ApplicationDbContext _context;
 
         public MoviesController()
         {
             _context = new ApplicationDbContext();
+
         }
+
 
         protected override void Dispose(bool disposing)
         {
